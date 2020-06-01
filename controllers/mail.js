@@ -36,3 +36,7 @@ exports.postSendEmail = async (req, res,next) => {
         next(error);
       }); 
 };
+
+exports.getMailInfo = (req, res,next) => {
+  res.status(201).json({ message: 'API is running'});
+};
